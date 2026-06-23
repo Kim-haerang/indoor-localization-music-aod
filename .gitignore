@@ -1,0 +1,21 @@
+# Large research data and trained models
+*.mat
+*.h5
+*.csv
+*.asv
+
+# Local generated folders
+dataset_h5/
+models/
+data/
+raw/
+results/raw/
+
+# MATLAB temporary files
+*.mlx~
+*.m~
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
