@@ -33,6 +33,25 @@
 5. CNN 회귀 모델을 사용해 noisy channel/phase를 복원하는 실험을 진행했습니다.
 6. RMSE와 시각화 결과를 바탕으로 추정 안정성을 분석했습니다.
 
+## 폴더 구조
+
+```text
+indoor-localization-music-aod/
+  README.md
+  docs/
+    images/
+    notes/
+  experiments/
+  results/
+```
+
+| 폴더 | 설명 |
+| --- | --- |
+| `docs/images` | 대표 결과 이미지 |
+| `docs/notes` | 연구 요약, 실험 흐름, 공개 범위 정리 |
+| `experiments` | 원본 실험 파일 목록과 향후 공개 가능 자료 정리 |
+| `results` | 결과 이미지 해석 요약 |
+
 ## 대표 결과
 
 ### MUSIC 각도 추정
