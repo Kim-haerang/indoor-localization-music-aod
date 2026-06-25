@@ -19,3 +19,8 @@ results/raw/
 .DS_Store
 Thumbs.db
 .vscode/
+
+# 대용량 데이터 파일
+*.mat
+*.h5
+*.hdf5
