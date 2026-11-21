@@ -42,15 +42,13 @@ indoor-localization-music-aod/
     images/
     notes/
   experiments/
-  results/
 ```
 
 | 폴더 | 설명 |
 | --- | --- |
 | `docs/images` | 대표 결과 이미지 |
 | `docs/notes` | 연구 요약, 실험 흐름, 공개 범위 정리 |
-| `experiments` | 원본 실험 파일 목록과 향후 공개 가능 자료 정리 |
-| `results` | 결과 이미지 해석 요약 |
+| `experiments` | MATLAB 데이터 생성·채널 처리·추정 실험 코드 |
 
 ## 대표 결과
 
@@ -78,18 +76,13 @@ Wrapped phase, unwrapped phase, CFO 보정, 이상적인 ground truth phase를 �
 
 CNN 학습 과정에서 RMSE와 loss가 감소하는지 확인했습니다.
 
-## 원본 작업 폴더의 주요 자료
+## 실험 코드
 
-원본 작업 폴더 기준 주요 자료는 다음과 같습니다.
+- [experiments/](experiments/): MATLAB 실험 스크립트
+- [실험 흐름](docs/notes/experiment-flow.md)
+- [결과 해석](docs/notes/results-analysis.md)
 
-| 종류 | 예시 |
-| --- | --- |
-| MATLAB 스크립트 | `test_0.m`, `test_1.m`, `test_1101_1.m`, `test_1106_1.m`, `test_1110_1.m`, `test_1121.m` |
-| 채널 데이터셋 | `dataset_h5`, `AoD_simu(08.08)`, `DoA_Simu` |
-| 학습 모델 | `SIMO_h8_model_SNR0.mat`, `SIMO_h8_model_SNR5.mat`, `SIMO_h8_model_SNR10.mat`, `model_h8_cnn_music.mat` |
-| MATLAB 생성 패키지 | `+MISO_TML_TDL_MUSIC_h8_10`, `+haerang_MIMO_model_h8_denoising_10` |
-
-대용량 원본 데이터와 학습된 모델 파일은 공개용 저장소에서 제외합니다.
+대용량 원본 데이터와 학습된 모델 파일은 이 저장소에 포함하지 않습니다.
 
 ## 기술 스택
 
@@ -109,4 +102,4 @@ CNN 학습 과정에서 RMSE와 loss가 감소하는지 확인했습니다.
 
 ## 공개 범위
 
-이 저장소는 학부연구생 활동의 공개 가능한 요약과 개인 학습 기록만 포함하는 것을 권장합니다. 연구실 내부 자료, 미공개 데이터, 대용량 원본 데이터, 지도교수 또는 연구실 소유 문서는 포함하지 않습니다.
+공개 자료 구성과 연구 기록의 범위는 [공개 범위 문서](docs/notes/public-disclosure.md)에 정리했습니다.
